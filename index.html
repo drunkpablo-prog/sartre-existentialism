@@ -1,60 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jean-Paul Sartre | Existentialism Is a Humanism</title>
-  <style>
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background-color: #f5f5f5;
-      color: #222;
-      margin: 0;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 40px;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 50px;
-      line-height: 1.8;
-    }
-    h1, h2 {
-      font-weight: normal;
-    }
-    img {
-      max-width: 100%;
-      margin: 30px 0;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin: 40px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Existentialism Is a Humanism — Home</title>
+
+<style>
+/* ===== 基础风格（与其他页面完全一致） ===== */
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f2f2f2;
+  line-height: 1.8;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+nav {
+  background: rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  padding: 60px;
+  border-radius: 6px;
+}
+
+/* ===== Scroll Reveal 动画部分 ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-weight: normal;
+  border-left: 4px solid #333;
+  padding-left: 12px;
+}
+
+/* ===== Footer ===== */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  background: rgba(0,0,0,0.6);
+  color: #ccc;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Jean-Paul Sartre</h1>
-  <p>Existentialism Is a Humanism</p>
+  <h1>Existentialism Is a Humanism</h1>
+  <p>Jean-Paul Sartre</p>
 </header>
 
 <nav>
@@ -66,50 +108,62 @@
 </nav>
 
 <main>
-  <h2>Introduction</h2>
-  <p>
-    This website is an exhibition-style academic project introducing Jean-Paul Sartre
-    and his lecture <em>Existentialism Is a Humanism</em>. The purpose of the site is not
-    technical sophistication, but the combination of Western philosophical thought
-    with a basic web-based form of presentation.
-  </p>
 
-  <img src="sartre.jpg" alt="Jean-Paul Sartre">
-
+<section class="reveal">
+  <h2>About This Project</h2>
   <p>
-    Sartre delivered the lecture in 1945, in the aftermath of World War II, at a moment
-    when European intellectuals were rethinking freedom, responsibility, and human
-    meaning. Existentialism was widely criticized at the time as pessimistic or immoral.
-    Sartre’s lecture is a direct response to these accusations.
+    This website is a student project for the course <em>Western Classical Thought</em>.
+    It introduces Jean-Paul Sartre’s lecture <em>Existentialism Is a Humanism</em> through
+    historical background, textual analysis, and key philosophical concepts.
   </p>
+</section>
 
-  <h2>Existence Precedes Essence</h2>
+<section class="reveal">
+  <h2>Why Sartre?</h2>
   <p>
-    Sartre’s most famous claim is that existence precedes essence. Human beings are not
-    born with a predefined nature or purpose. Instead, they exist first and define
-    themselves through action. This idea challenges traditional religious and
-    metaphysical conceptions of human nature.
+    Sartre’s existentialism addresses fundamental questions of freedom, responsibility,
+    and human dignity in a postwar context. His thought remains influential in philosophy,
+    literature, and modern cultural theory.
   </p>
+</section>
 
-  <h2>Freedom and Responsibility</h2>
+<section class="reveal">
+  <h2>Site Structure</h2>
   <p>
-    According to Sartre, human freedom is unavoidable. Every action, including inaction,
-    constitutes a choice. With freedom comes absolute responsibility—not only for
-    oneself, but for humanity as a whole.
+    The site is organized into four main sections: an introduction to the author, the
+    historical context of the work, an overview of the lecture itself, and an explanation
+    of its key concepts. Each section is designed to guide the reader step by step.
   </p>
+</section>
 
-  <h2>Why Existentialism Is a Humanism</h2>
-  <p>
-    Sartre argues that existentialism is a form of humanism because it places human
-    beings at the center of meaning-making. There is no authority higher than human
-    action and commitment. Human dignity arises from the capacity to choose and to act
-    responsibly.
-  </p>
 </main>
 
 <footer>
-  Student project for Western Classical Thought
+<p>
+Student Project for Western Classical Thought<br>
+Existentialism Is a Humanism — Jean-Paul Sartre
+</p>
 </footer>
+
+<!-- ===== Scroll Reveal Script（只用于 Home 页） ===== -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (elementTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
 
 </body>
 </html>
