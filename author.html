@@ -2,34 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jean-Paul Sartre — The Author</title>
+  <title>Author — Jean-Paul Sartre</title>
+
   <style>
     body {
-      font-family: Georgia, serif;
-      background: #f5f5f5;
       margin: 0;
+      font-family: Georgia, serif;
+      line-height: 1.8;
+      background: 
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #f2f2f2;
     }
-    header, nav {
-      background: #222;
-      color: white;
+
+    header {
       text-align: center;
-      padding: 20px;
+      padding: 80px 20px 40px;
     }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.85;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+    }
+
     nav a {
-      color: white;
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
+      font-size: 16px;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
       max-width: 900px;
-      background: white;
-      margin: 40px auto;
-      padding: 50px;
-      line-height: 1.8;
+      margin: 60px auto;
+      background: rgba(255,255,255,0.95);
+      color: #111;
+      padding: 60px;
+      border-radius: 6px;
     }
-    img {
-      max-width: 100%;
-      margin: 30px 0;
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+      border-left: 4px solid #333;
+      padding-left: 12px;
+    }
+
+    img.author-photo {
+      width: 260px;
+      display: block;
+      margin: 30px auto;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -38,7 +84,7 @@
 
 <header>
   <h1>Jean-Paul Sartre</h1>
-  <p>The Author</p>
+  <p>Philosopher, Writer, and Public Intellectual</p>
 </header>
 
 <nav>
@@ -50,25 +96,69 @@
 </nav>
 
 <main>
-  <img src="sartre.jpg" alt="Jean-Paul Sartre">
 
-  <p>
-    Jean-Paul Sartre (1905–1980) was a French philosopher, novelist, playwright, and
-    public intellectual. He is widely regarded as one of the central figures of
-    twentieth-century existentialism.
-  </p>
+  <img src="images/sartre.jpg" alt="Jean-Paul Sartre portrait" class="author-photo">
 
-  <p>
-    Sartre’s philosophy is deeply shaped by phenomenology, particularly the work of
-    Edmund Husserl and Martin Heidegger. His major philosophical works include
-    <em>Being and Nothingness</em> (1943) and <em>Existentialism Is a Humanism</em> (1945).
-  </p>
+  <section>
+    <h2>Early Life and Education (1905–1939)</h2>
+    <p>
+      Jean-Paul Sartre was born in Paris in 1905. After the early death of his father,
+      he was raised primarily by his mother and grandfather, who introduced him to
+      classical literature and philosophy at an early age.
+    </p>
+    <p>
+      Sartre studied philosophy at the École Normale Supérieure, where he met Simone de
+      Beauvoir, who would become both his lifelong intellectual partner and a major
+      philosophical figure in her own right. During this period, Sartre was deeply
+      influenced by German philosophy, particularly the works of Husserl and Heidegger.
+    </p>
+  </section>
 
-  <p>
-    Beyond philosophy, Sartre was actively engaged in political and social debates.
-    He famously refused the Nobel Prize in Literature in 1964, arguing that a writer
-    should not become an institution.
-  </p>
+  <section>
+    <h2>War, Occupation, and Existential Thought (1939–1945)</h2>
+    <p>
+      The outbreak of World War II marked a turning point in Sartre’s intellectual
+      development. He was drafted into the French army and later became a prisoner of
+      war. These experiences intensified his reflection on freedom, responsibility,
+      and human choice under extreme conditions.
+    </p>
+    <p>
+      During the German occupation of France, Sartre continued writing and began to
+      articulate the philosophical ideas that would later be associated with
+      existentialism. His focus shifted from abstract philosophy toward concrete human
+      situations.
+    </p>
+  </section>
+
+  <section>
+    <h2>Postwar Fame and Public Engagement (1945–1960)</h2>
+    <p>
+      After the war, Sartre emerged as one of the most influential public intellectuals
+      in France. His lecture <em>Existentialism Is a Humanism</em> (1945) introduced
+      existentialist ideas to a broad audience and sparked intense public debate.
+    </p>
+    <p>
+      Sartre believed that philosophers should engage directly with social and political
+      issues. He wrote novels, plays, essays, and political commentary, seeking to bridge
+      philosophy and everyday life.
+    </p>
+  </section>
+
+  <section>
+    <h2>Later Years and Legacy (1960–1980)</h2>
+    <p>
+      In his later years, Sartre became increasingly involved in political activism,
+      supporting anti-colonial movements and criticizing institutional power. In 1964,
+      he famously refused the Nobel Prize in Literature, arguing that writers should
+      remain independent from official recognition.
+    </p>
+    <p>
+      Sartre died in 1980, leaving behind a body of work that continues to shape modern
+      philosophy, literature, and cultural theory. His insistence on human freedom and
+      responsibility remains central to existentialist thought.
+    </p>
+  </section>
+
 </main>
 
 </body>
