@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Author — Jean-Paul Sartre</title>
+<meta charset="UTF-8">
+<title>Author — Jean-Paul Sartre</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      line-height: 1.8;
-      background: 
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("images/background.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #f2f2f2;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f2f2f2;
+  line-height: 1.8;
+}
 
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      font-weight: normal;
-    }
+nav {
+  background: rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
 
-    header p {
-      font-size: 18px;
-      opacity: 0.85;
-    }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
 
-    nav {
-      text-align: center;
-      padding: 15px;
-      background: rgba(0,0,0,0.6);
-      position: sticky;
-      top: 0;
-    }
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  padding: 60px;
+  border-radius: 6px;
+}
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 16px;
-    }
+.toc {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+.toc a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
 
-    main {
-      max-width: 900px;
-      margin: 60px auto;
-      background: rgba(255,255,255,0.95);
-      color: #111;
-      padding: 60px;
-      border-radius: 6px;
-    }
+section {
+  margin-bottom: 60px;
+}
 
-    section {
-      margin-bottom: 60px;
-    }
+h2 {
+  font-weight: normal;
+  border-left: 4px solid #333;
+  padding-left: 12px;
+}
 
-    h2 {
-      font-weight: normal;
-      margin-bottom: 20px;
-      border-left: 4px solid #333;
-      padding-left: 12px;
-    }
+.author-photo {
+  width: 260px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 4px;
+}
 
-    img.author-photo {
-      width: 260px;
-      display: block;
-      margin: 30px auto;
-      border-radius: 4px;
-    }
-  </style>
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  background: rgba(0,0,0,0.6);
+  color: #ccc;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>Jean-Paul Sartre</h1>
-  <p>Philosopher, Writer, and Public Intellectual</p>
+  <p>Philosopher, Writer, Public Intellectual</p>
 </header>
 
 <nav>
@@ -97,69 +100,64 @@
 
 <main>
 
-  <img src="images/sartre.jpg" alt="Jean-Paul Sartre portrait" class="author-photo">
+<img src="images/sartre.jpg" alt="Jean-Paul Sartre" class="author-photo">
 
-  <section>
-    <h2>Early Life and Education (1905–1939)</h2>
-    <p>
-      Jean-Paul Sartre was born in Paris in 1905. After the early death of his father,
-      he was raised primarily by his mother and grandfather, who introduced him to
-      classical literature and philosophy at an early age.
-    </p>
-    <p>
-      Sartre studied philosophy at the École Normale Supérieure, where he met Simone de
-      Beauvoir, who would become both his lifelong intellectual partner and a major
-      philosophical figure in her own right. During this period, Sartre was deeply
-      influenced by German philosophy, particularly the works of Husserl and Heidegger.
-    </p>
-  </section>
+<div class="toc">
+  <strong>On this page:</strong><br>
+  <a href="#early">Early Life</a>
+  <a href="#war">War Period</a>
+  <a href="#postwar">Postwar Years</a>
+  <a href="#legacy">Legacy</a>
+</div>
 
-  <section>
-    <h2>War, Occupation, and Existential Thought (1939–1945)</h2>
-    <p>
-      The outbreak of World War II marked a turning point in Sartre’s intellectual
-      development. He was drafted into the French army and later became a prisoner of
-      war. These experiences intensified his reflection on freedom, responsibility,
-      and human choice under extreme conditions.
-    </p>
-    <p>
-      During the German occupation of France, Sartre continued writing and began to
-      articulate the philosophical ideas that would later be associated with
-      existentialism. His focus shifted from abstract philosophy toward concrete human
-      situations.
-    </p>
-  </section>
+<section id="early">
+<h2>Early Life and Education (1905–1939)</h2>
+<p>
+Jean-Paul Charles Aymard Sartre was born on June 21, 1905, in Paris. His father, a naval officer, died when Sartre was only fifteen months old, leaving him to be raised by his mother, Anne-Marie Schweitzer, and his maternal grandfather, Karl Schweitzer, a professor of German. This intellectually stimulating environment exposed Sartre to classical literature and philosophy from an early age, profoundly shaping his intellectual development.
+</p>
+<p>
+Sartre attended the prestigious Lycée Henri-IV in Paris before entering the École Normale Supérieure, where he studied philosophy from 1924 to 1929. It was here that he formed his lifelong intellectual and personal partnership with Simone de Beauvoir, a relationship that would become central to both their lives and work. During this formative period, Sartre was deeply influenced by German phenomenology, particularly the works of Edmund Husserl and Martin Heidegger, whose focus on consciousness and being would become foundational to his own philosophical system.
+</p>
+</section>
 
-  <section>
-    <h2>Postwar Fame and Public Engagement (1945–1960)</h2>
-    <p>
-      After the war, Sartre emerged as one of the most influential public intellectuals
-      in France. His lecture <em>Existentialism Is a Humanism</em> (1945) introduced
-      existentialist ideas to a broad audience and sparked intense public debate.
-    </p>
-    <p>
-      Sartre believed that philosophers should engage directly with social and political
-      issues. He wrote novels, plays, essays, and political commentary, seeking to bridge
-      philosophy and everyday life.
-    </p>
-  </section>
+<section id="war">
+<h2>War and Occupation (1939–1945)</h2>
+<p>
+The outbreak of World War II marked a decisive turning point in Sartre's life and thought. Drafted into the French army in 1939, he served as a meteorologist before being captured by German forces in 1940. His nine months as a prisoner of war were a period of intense reflection, solidifying his ideas about individual freedom and responsibility within constrained circumstances.
+</p>
+<p>
+After his release in 1941, Sartre returned to occupied Paris, where he became involved in the intellectual resistance. He continued to write prolifically, publishing his magnum opus, <em>Being and Nothingness</em>, in 1943. This dense philosophical work systematically articulated the principles of his existentialist philosophy. Simultaneously, his plays, most notably <em>The Flies</em> (1943) and <em>No Exit</em> (1944), served as powerful, accessible vehicles for existentialist themes, exploring responsibility, choice, and human relationships under extreme conditions.
+</p>
+</section>
 
-  <section>
-    <h2>Later Years and Legacy (1960–1980)</h2>
-    <p>
-      In his later years, Sartre became increasingly involved in political activism,
-      supporting anti-colonial movements and criticizing institutional power. In 1964,
-      he famously refused the Nobel Prize in Literature, arguing that writers should
-      remain independent from official recognition.
-    </p>
-    <p>
-      Sartre died in 1980, leaving behind a body of work that continues to shape modern
-      philosophy, literature, and cultural theory. His insistence on human freedom and
-      responsibility remains central to existentialist thought.
-    </p>
-  </section>
+<section id="postwar">
+<h2>Postwar Fame (1945–1960)</h2>
+<p>
+In the immediate aftermath of World War II, Sartre emerged as France's preeminent public intellectual and the leading voice of existentialism. His October 1945 lecture, "Existentialism Is a Humanism," was a cultural event that passionately defended his philosophy against charges of pessimism and defined it as a doctrine of action, responsibility, and human dignity.
+</p>
+<p>
+Sartre tirelessly championed the concept of the <em>engaged intellectual</em> (<em>l'intellectuel engagé</em>), arguing that writers and thinkers have a fundamental responsibility to participate in the political struggles of their time. He co-founded the influential literary and political journal <em>Les Temps Modernes</em> and produced an extraordinary body of work spanning novels, plays, philosophical treatises, and political essays, consistently seeking to bridge abstract philosophy with concrete social and political realities.
+</p>
+</section>
+
+<section id="legacy">
+<h2>Later Years and Legacy (1960–1980)</h2>
+<p>
+In his later years, Sartre became increasingly involved in political activism, supporting anti-colonial movements and participating in the protests of May 1968. In a defining act of principle, he declined the 1964 Nobel Prize in Literature, stating that a writer must not allow himself to be transformed into an institution. His later philosophical work, particularly the <em>Critique of Dialectical Reason</em> (1960), represented an ambitious attempt to reconcile existentialism with Marxism.
+</p>
+<p>
+Jean-Paul Sartre died on April 15, 1980, in Paris. His funeral procession drew tens of thousands of mourners, a testament to his profound impact on French intellectual and cultural life. Sartre's legacy endures not only in academic philosophy but in broader cultural understandings of freedom, authenticity, and responsibility. His insistence that "man is condemned to be free" and that we create ourselves through our choices continues to challenge and inspire readers worldwide, securing his place as one of the most significant thinkers of the twentieth century.
+</p>
+</section>
 
 </main>
+
+<footer>
+<p>
+Student Project for Western Classical Thought<br>
+Existentialism Is a Humanism — Jean-Paul Sartre
+</p>
+</footer>
 
 </body>
 </html>
