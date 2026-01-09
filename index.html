@@ -21,14 +21,30 @@ body {
   color: #f2f2f2;
 }
 
-/* ===== 导航 ===== */
+/* ===== Header（与其他页面一致） ===== */
+header {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+header h1 {
+  font-size: 46px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+/* ===== Navigation ===== */
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background: rgba(0,0,0,0.6);
   text-align: center;
   padding: 15px;
+  position: sticky;
+  top: 0;
   z-index: 100;
 }
 
@@ -38,7 +54,7 @@ nav a {
   text-decoration: none;
 }
 
-/* ===== 全屏 section ===== */
+/* ===== 全屏 Section ===== */
 .section {
   height: 100vh;
   display: flex;
@@ -46,11 +62,11 @@ nav a {
   align-items: center;
 }
 
-/* ===== 半透明内容框 ===== */
+/* ===== 半透明内容块 ===== */
 .content-box {
   background: rgba(80, 80, 80, 0.65);
-  padding: 70px 90px;
-  max-width: 850px;
+  padding: 80px 100px;
+  max-width: 900px;
   text-align: center;
   border-radius: 6px;
 
@@ -64,35 +80,22 @@ nav a {
   transform: translateY(0);
 }
 
-/* ===== 首页主抬头 ===== */
-.main-title {
-  font-size: 42px;
-  margin-bottom: 10px;
-  font-weight: normal;
-}
-
-.sub-title {
-  font-size: 20px;
-  margin-bottom: 35px;
-  opacity: 0.85;
-}
-
 .content-box h2 {
+  font-size: 38px;
   font-weight: normal;
-  font-size: 34px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .content-box p {
-  font-size: 18px;
-  line-height: 1.9;
+  font-size: 20px;
+  line-height: 2;
 }
 
-/* ===== 箭头 ===== */
+/* ===== 下滑箭头 ===== */
 .arrow {
-  margin-top: 40px;
-  font-size: 28px;
-  opacity: 0.7;
+  margin-top: 45px;
+  font-size: 30px;
+  opacity: 0.75;
   animation: bounce 2.5s infinite;
 }
 
@@ -105,13 +108,19 @@ nav a {
 footer {
   text-align: center;
   padding: 30px;
-  background: rgba(0,0,0,0.6);
   font-size: 14px;
+  background: rgba(0,0,0,0.6);
+  color: #ccc;
 }
 </style>
 </head>
 
 <body>
+
+<header>
+  <h1>Existentialism Is a Humanism</h1>
+  <p>Jean-Paul Sartre</p>
+</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -124,16 +133,12 @@ footer {
 <!-- ===== Section 1 ===== -->
 <section class="section">
   <div class="content-box reveal">
-    <div class="main-title">Existentialism Is a Humanism</div>
-    <div class="sub-title">Jean-Paul Sartre</div>
-
     <h2>About This Project</h2>
     <p>
       This website is a student project for the course <em>Western Classical Thought</em>.
-      It introduces Jean-Paul Sartre’s lecture through historical background,
-      textual analysis, and key philosophical concepts.
+      It introduces Jean-Paul Sartre’s lecture <em>Existentialism Is a Humanism</em>
+      through historical background, textual analysis, and key philosophical concepts.
     </p>
-
     <div class="arrow">↓</div>
   </div>
 </section>
@@ -160,7 +165,7 @@ footer {
       The site is organized into four main sections: an introduction to the author,
       the historical context of the work, an overview of the lecture itself,
       and an explanation of its key concepts.
-      Each section guides the reader step by step.
+      Each section is designed to guide the reader step by step.
     </p>
   </div>
 </section>
