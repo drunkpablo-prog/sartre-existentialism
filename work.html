@@ -3,96 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <title>The Work — Existentialism Is a Humanism</title>
+
   <style>
     body {
       font-family: Georgia, serif;
-      background: #f5f5f5;
       margin: 0;
+      background-image: url("images/background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
     }
+
     header, nav {
       background: #222;
       color: white;
       text-align: center;
       padding: 20px;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ddd;
+    }
+
     main {
       max-width: 900px;
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       margin: 40px auto;
       padding: 50px;
       line-height: 1.8;
+      animation: fadeIn 1.2s ease-in;
     }
+
     h1, h2 {
       font-weight: normal;
     }
+
+    section {
+      margin-bottom: 60px;
+    }
+
     img {
       max-width: 100%;
-      margin: 30px 0;
+      margin: 30px 0 10px 0;
+    }
+
+    .caption {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 
 <body>
 
+<a id="top"></a >
+
 <header>
   <h1>The Work</h1>
-  <p>Existentialism Is a Humanism (1945)</p>
+  <p>Existentialism Is a Humanism (1945)</p >
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="author.html">Author</a>
-  <a href="context.html">Historical Context</a>
-  <a href="work.html">The Work</a>
-  <a href="concepts.html">Key Concepts</a>
+  <a href=" ">Home</a >
+  <a href="author.html">Author</a >
+  <a href="context.html">Historical Context</a >
+  <a href="work.html">The Work</a >
+  <a href="concepts.html">Key Concepts</a >
 </nav>
 
 <main>
 
-  <h2>Origin of the Lecture</h2>
-
+  <!-- 页面内跳转 -->
   <p>
-    <em>Existentialism Is a Humanism</em> originated as a public lecture delivered by
-    Jean-Paul Sartre in Paris in October 1945. The lecture was later published in written
-    form and became one of Sartre’s most widely read philosophical texts.
-  </p>
+    Jump to:
+    <a href="#background">Background</a > |
+    <a href="#thesis">Central Thesis</a > |
+    <a href="#arguments">Key Arguments</a > |
+    <a href="#ethics">Ethical Implications</a > |
+    <a href="#misunderstandings">Misunderstandings</a >
+  </p >
+  <hr>
 
-  <p>
-    Unlike Sartre’s more technical philosophical works, this lecture was intended for
-    a general audience. Its aim was to clarify existentialism and to respond to public
-    misunderstandings surrounding the movement.
-  </p>
+  <!-- Section 1 -->
+  <section id="background">
+    <h2>Background of the Lecture</h2>
 
-  <h2>Central Philosophical Claim</h2>
+    <p>
+      <em>Existentialism Is a Humanism</em> originated as a public lecture delivered by
+      Jean-Paul Sartre in Paris in October 1945, shortly after the end of World War II.
+      The lecture was later published in written form and quickly became one of Sartre’s
+      most widely read philosophical texts.
+    </p >
 
-  <p>
-    The central thesis of the work is the claim that “existence precedes essence.”
-    Sartre argues that human beings are not born with a predefined nature or purpose.
-    Instead, individuals must define themselves through their actions and choices.
-  </p>
+    <p>
+      Unlike Sartre’s major philosophical works such as <em>Being and Nothingness</em>,
+      this lecture was not intended for a specialized academic audience. Instead, it was
+      designed to address the general public and to clarify widespread misunderstandings
+      about existentialism.
+    </p >
 
-  <p>
-    This claim directly challenges philosophical and theological traditions that assume
-    a fixed human essence determined by God, nature, or reason.
-  </p>
+    < img src="images/sartre-book.jpg" alt="Existentialism Is a Humanism book cover">
+    <div class="caption">
+      Figure 1. Cover of <em>Existentialism Is a Humanism</em>.
+    </div>
+  </section>
 
-  <h2>Ethical Implications</h2>
+  <!-- Section 2 -->
+  <section id="thesis">
+    <h2>The Central Thesis: Existence Precedes Essence</h2>
 
-  <p>
-    Sartre emphasizes that radical human freedom entails radical responsibility.
-    By choosing oneself, one also chooses an image of humanity as a whole. Moral
-    responsibility is therefore inescapable.
-  </p>
+    <p>
+      The central claim of the lecture is Sartre’s famous assertion that “existence precedes
+      essence.” By this, Sartre means that human beings are not born with a predefined nature,
+      purpose, or moral essence.
+    </p >
 
-  <p>
-    In this sense, the work presents existentialism not as a philosophy of despair,
-    but as a serious ethical position grounded in human freedom.
-  </p>
+    <p>
+      In contrast to objects such as tools, which are designed according to a specific
+      function, human beings first exist and only later define themselves through their
+      actions and choices. There is no fixed blueprint for what a human being ought to be.
+    </p >
+  </section>
+
+  <!-- Section 3 -->
+  <section id="arguments">
+    <h2>Key Philosophical Arguments</h2>
+
+    <p>
+      Sartre develops his argument by rejecting both theological and deterministic accounts
+      of human nature. If God does not exist, there can be no divine plan that determines
+      human values or purposes.
+    </p >
+
+    <p>
+      As a result, individuals must take full responsibility for their choices. Every action
+      becomes an expression of how one believes human beings ought to live, making each
+      decision universally significant.
+    </p >
+  </section>
+
+  <!-- Section 4 -->
+  <section id="ethics">
+    <h2>Ethical and Moral Implications</h2>
+
+    <p>
+      Far from promoting moral relativism, Sartre argues that existentialism places an
+      immense ethical burden on the individual. To choose for oneself is simultaneously
+      to choose for all of humanity.
+    </p >
+
+    <p>
+      This responsibility often produces anguish, a recognition of the weight of one’s
+      freedom. Sartre insists that such anguish is not a weakness but a necessary condition
+      of ethical seriousness.
+    </p >
+  </section>
+
+  <!-- Section 5 -->
+  <section id="misunderstandings">
+    <h2>Common Misunderstandings</h2>
+
+    <p>
+      Sartre responds to critics who accuse existentialism of encouraging despair,
+      passivity, or nihilism. On the contrary, he argues that existentialism affirms
+      human dignity by emphasizing freedom, responsibility, and commitment.
+    </p >
+
+    <p>
+      The lecture concludes by redefining humanism: not as a doctrine based on abstract
+      ideals, but as one grounded in concrete human action and responsibility.
+    </p >
+  </section>
+
+  <p style="text-align: right;">
+    <a href="#top">Back to top ↑</a >
+  </p >
 
 </main>
 
