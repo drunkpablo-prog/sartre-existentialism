@@ -5,41 +5,32 @@
 <title>Existentialism Is a Humanism — Home</title>
 
 <style>
-/* ===== 基础风格（与其他页面完全一致） ===== */
-
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
   font-family: Georgia, serif;
+}
+
+/* ===== 背景统一 ===== */
+body {
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #f2f2f2;
-  line-height: 1.8;
 }
 
-header {
-  text-align: center;
-  padding: 100px 20px 60px;
-}
-
-header h1 {
-  font-weight: normal;
-  font-size: 44px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  opacity: 0.85;
-}
-
+/* ===== 顶部导航 ===== */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: rgba(0,0,0,0.6);
   text-align: center;
   padding: 15px;
-  position: sticky;
-  top: 0;
+  z-index: 100;
 }
 
 nav a {
@@ -48,56 +39,67 @@ nav a {
   text-decoration: none;
 }
 
-main {
-  max-width: 900px;
-  margin: 60px auto;
-  background: rgba(255,255,255,0.95);
-  color: #111;
-  padding: 60px;
+/* ===== 全屏 section ===== */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== 半透明文字框 ===== */
+.content-box {
+  background: rgba(80, 80, 80, 0.65);
+  padding: 60px 80px;
+  max-width: 800px;
+  text-align: center;
   border-radius: 6px;
-}
 
-/* ===== Scroll Reveal 动画部分 ===== */
-
-.reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease;
+  transform: translateY(30px);
+  transition: all 1s ease;
 }
 
-.reveal.active {
+.content-box.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-section {
-  margin-bottom: 60px;
+.content-box h2 {
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 25px;
 }
 
-h2 {
-  font-weight: normal;
-  border-left: 4px solid #333;
-  padding-left: 12px;
+.content-box p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* ===== 下滑箭头 ===== */
+.arrow {
+  margin-top: 40px;
+  font-size: 28px;
+  opacity: 0.7;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 /* ===== Footer ===== */
-
 footer {
   text-align: center;
   padding: 30px;
-  font-size: 14px;
   background: rgba(0,0,0,0.6);
-  color: #ccc;
+  font-size: 14px;
 }
 </style>
 </head>
 
 <body>
-
-<header>
-  <h1>Existentialism Is a Humanism</h1>
-  <p>Jean-Paul Sartre</p>
-</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -107,58 +109,61 @@ footer {
   <a href="concepts.html">Key Concepts</a>
 </nav>
 
-<main>
-
-<section class="reveal">
-  <h2>About This Project</h2>
-  <p>
-    This website is a student project for the course <em>Western Classical Thought</em>.
-    It introduces Jean-Paul Sartre’s lecture <em>Existentialism Is a Humanism</em> through
-    historical background, textual analysis, and key philosophical concepts.
-  </p>
+<!-- ===== Section 1 ===== -->
+<section class="section">
+  <div class="content-box reveal">
+    <h2>About This Project</h2>
+    <p>
+      This website is a student project for the course <em>Western Classical Thought</em>.
+      It introduces Jean-Paul Sartre’s lecture <em>Existentialism Is a Humanism</em>
+      through historical background, textual analysis, and key philosophical concepts.
+    </p>
+    <div class="arrow">↓</div>
+  </div>
 </section>
 
-<section class="reveal">
-  <h2>Why Sartre?</h2>
-  <p>
-    Sartre’s existentialism addresses fundamental questions of freedom, responsibility,
-    and human dignity in a postwar context. His thought remains influential in philosophy,
-    literature, and modern cultural theory.
-  </p>
+<!-- ===== Section 2 ===== -->
+<section class="section">
+  <div class="content-box reveal">
+    <h2>Why Sartre?</h2>
+    <p>
+      Sartre’s existentialism addresses fundamental questions of freedom, responsibility,
+      and human dignity in a postwar context. His thought remains influential in philosophy,
+      literature, and modern cultural theory.
+    </p>
+    <div class="arrow">↓</div>
+  </div>
 </section>
 
-<section class="reveal">
-  <h2>Site Structure</h2>
-  <p>
-    The site is organized into four main sections: an introduction to the author, the
-    historical context of the work, an overview of the lecture itself, and an explanation
-    of its key concepts. Each section is designed to guide the reader step by step.
-  </p>
+<!-- ===== Section 3 ===== -->
+<section class="section">
+  <div class="content-box reveal">
+    <h2>Site Structure</h2>
+    <p>
+      The site is organized into four main sections: an introduction to the author,
+      the historical context of the work, an overview of the lecture itself,
+      and an explanation of its key concepts. Each section is designed to guide
+      the reader step by step.
+    </p>
+  </div>
 </section>
-
-</main>
 
 <footer>
-<p>
-Student Project for Western Classical Thought<br>
-Existentialism Is a Humanism — Jean-Paul Sartre
-</p>
+  Student Project for Western Classical Thought<br>
+  Existentialism Is a Humanism — Jean-Paul Sartre
 </footer>
 
-<!-- ===== Scroll Reveal Script（只用于 Home 页） ===== -->
 <script>
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
-  for (let i = 0; i < reveals.length; i++) {
+  reveals.forEach(box => {
+    const top = box.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 100;
-
-    if (elementTop < windowHeight - revealPoint) {
-      reveals[i].classList.add("active");
+    if (top < windowHeight - 150) {
+      box.classList.add("active");
     }
-  }
+  });
 }
 
 window.addEventListener("scroll", revealOnScroll);
